@@ -1,9 +1,9 @@
 # InferenceSolver
-Generates $\LaTeX$-styled solutions to statistical inference problems.
+A user-friendly expert system that generates $\LaTeX$-styled solutions to statistical inference problems
 
 ## Overview
 
-InferenceSolver is a knowledge-based system that 
+InferenceSolver is a knowledge-based system that...
 - Asks the user for problem parameters in plain English
 - Outputs detailed solutions as a .tex file with explained calculations, reasoning, and interpretation
 - Handles the following parameters:
@@ -32,8 +32,4 @@ InferenceSolver is a knowledge-based system that
 4. Once all relevant questions have been answered, the program will output the solution file as *solution.tex*
 7.  To restart, enter `(reset) (run)`
 
-
 Running the Jess engine using the provided Main.java file provides additional debug information about the facts in working memory.
-
-## Acknowledgments
-Thank you to Dr. Bune Bloomquist for help with the statistics!
