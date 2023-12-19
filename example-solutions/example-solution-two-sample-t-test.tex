@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{amsthm}
+\begin{document}
+\textbf{State}: We are interested in the difference in the true mean pain intensity of patients in the vertebroplasty group (\(\mu_1\)) and the true mean pain intensity of patients in the placebo group (\(\mu_2\)).
+   $$H_0: \mu_1 - \mu_2 = 0$$
+   $$H_a: \mu_1 - \mu_2 < 0$$\newline
+
+\textbf{Plan}: We use a two-sample \(t\)-test for a population mean difference at confidence level \(C = 0.95\) with \(\textrm{df} = \frac{\left( \mathrm{Var}[\bar{x}_1] + \mathrm{Var}[\bar{x}_2] \right)^2}{ \mathrm{df}_1 \mathrm{Var}[\bar{x}_1]^2 + \mathrm{df}_2 \mathrm{Var}[\bar{x}_2]^2} = 127.435\).
+\begin{itemize}
+\item    Randomness: A random sample of patients in the vertebroplasty group is taken. A random sample of patients in the placebo group is taken. Furthermore, both samples are taken independently.
+
+\item    Independence: Since the number of patients in the vertebroplasty group \(\geq 10n_1= 10(68) = 680\) and the number of patients in the placebo group \(\geq 10n_2= 10(63) = 630\), by the 10\% rule, independence can be assumed.
+
+\item    Normality: Since \(n_1 = 68 \geq 30\), by CLT, \(\bar{x}_1\) is approximately normally distributed.
+Since \(n_2 = 63 \geq 30\), by CLT, \(\bar{x}_2\) is approximately normally distributed.
+\end{itemize}\newline
+
+\textbf{Do}: $$\textrm{SE} = \sqrt{ \frac{s_1 ^2}{n_1} + \frac{s_2 ^2}{n_2} } = \sqrt{ \frac{2.9^2}{68} + \frac{3.0^2}{63} } = 0.516$$
+$$t\textrm{-stat} = \frac{ (\bar{x}_1 - \bar{x}_2) - (\mu_1 - \mu_2) }{\textrm{SE}} = \frac{ (3.9 - 4.6) - 0}{0.516} = -1.355$$
+$$p\textrm{-value} = P(t < -1.355) =0.089$$\newline
+
+\textbf{Conclude}: Since \(p\)-value = \(0.089 > 0.05 = \alpha\), we fail to reject \(H_0\) at significance level \(\alpha = 0.05\).
+We therefore do not have convincing evidence that the true mean pain intensity of patients in the vertebroplasty group is less than the true mean pain intensity of patients in the placebo group.
+\end{document}
