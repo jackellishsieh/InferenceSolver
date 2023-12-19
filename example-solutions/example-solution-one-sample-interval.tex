@@ -1,14 +1,14 @@
 \documentclass{article}
 \usepackage{amsthm}
 \begin{document}
-\textbf{State}: We are interested in the true proportion of U.S. adults (\(p\)) among video game players.
+\textbf{State}: We are interested in the true proportion of video game players (\(p\)) among U.S. adults.
 \newline
 
 \textbf{Plan}: We construct a one-sample \(z\)-interval for a population proportion at confidence level \(C = 0.9\).
 \begin{itemize}
-\item    Randomness: A random sample of video game players is taken.
+\item    Randomness: A random sample of U.S. adults is taken.
 
-\item    Independence: Since the number of video game players \(\geq 10n= 10(2001) = 20010\), by the 10\% rule, independence can be assumed.
+\item    Independence: Since the number of U.S. adults \(\geq 10n= 10(2001) = 20010\), by the 10\% rule, independence can be assumed.
 
 \item    Normality: Since \(n\hat{p} = 2001(0.49) = 980.49, n(1-\hat{p}) = 2001(1- 0.49) = 1020.51\geq 10 \), by the Large Counts Rule, \(\hat{p}\) is approximately normally distributed.
 \end{itemize}\newline
@@ -18,6 +18,6 @@ $$\textrm{SE} = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}} = \sqrt{\frac{0.49(1 - 0.49)
 $$\textrm{ME} = z^* \textrm{SE} = 0.018$$
 90.0\% Confidence Interval = \(\hat{p} \pm \textrm{ME} = 0.49\pm0.018 = (0.472, 0.508)\).\newline
 
-\textbf{Conclude}: We are 90.0\% confident that the interval (0.472, 0.508) captures the true proportion of U.S. adults among video game players.
+\textbf{Conclude}: We are 90.0\% confident that the interval (0.472, 0.508) captures the true proportion of video game players among U.S. adults.
 
 \end{document}
