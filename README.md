@@ -7,7 +7,7 @@ InferenceSolver is a knowledge-based system that
 - Asks the user for problem parameters in plain English
 - Outputs detailed solutions as a .tex file with explained calculations, reasoning, and interpretation
 - Handles the following parameters:
--- [one/two]-population 
+-- [one/two]-sample 
 -- [proportion/mean] 
 -- [$z$/$t$] 
 -- [confidence interval/significance test]
