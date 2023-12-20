@@ -32,4 +32,4 @@ InferenceSolver is a knowledge-based system that...
 4. Once all relevant questions have been answered, the program will output the solution file as *solution.tex*
 7.  To restart, enter `(reset) (run)`
 
-Running the Jess engine using the provided Main.java file provides additional debug information about the facts in working memory.
+Running the Jess engine using the provided _Main.java_ file provides additional debug information about the facts in working memory.
